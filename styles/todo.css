@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ccc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.todo-container {
+  width: 90%;
+  max-width: 400px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.todo-input {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-input label {
+  margin-bottom: 5px;
+}
+
+.todo-input input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-todo-button {
+  background-color: #4caf50; /* Green */
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-todo-button:hover {
+  background-color: #45a049; /* Darker Green on Hover */
+}
+
+.delete-todo-button {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-todo-button:hover {
+  background-color: #d9534f; /* Darker Red on Hover */
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 600px) {
+  .todo-container {
+    width: 70%;
+  }
+}
